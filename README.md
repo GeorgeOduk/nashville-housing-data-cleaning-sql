@@ -1,5 +1,9 @@
 # Nashville Housing Data Cleaning Project
 
+## Project Links
+- **Portfolio case study:** https://georgeoduk.github.io/nashville-housing.html
+- **GitHub repository:** https://github.com/GeorgeOduk/nashville-housing-data-cleaning-sql
+
 ## Project Overview
 
 This project demonstrates how SQL Server can be used to clean and prepare a real estate housing dataset for analysis. The dataset contained several common data quality issues, including inconsistent date formats, missing property addresses, combined address fields, inconsistent categorical values, duplicate records, and redundant columns.
