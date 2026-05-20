@@ -1,5 +1,5 @@
 /*
-================================================================================
+
 Project: Nashville Housing Data Cleaning
 Author: George Oduk
 Tool: SQL Server / T-SQL
@@ -24,13 +24,13 @@ Key SQL techniques used:
 - CTEs
 - ROW_NUMBER()
 - DELETE
-================================================================================
+
 */
 
 Select* 
 From PortfolioProject.dbo.NashvilleHousing
 
---------------------------------------------------------------------------------------------------------------------------
+
 
 -- Standardise/Change Date Format
 
@@ -48,7 +48,7 @@ SET SaleDateConverted = CONVERT(Date,SaleDate)
 
 
 
- --------------------------------------------------------------------------------------------------------------------------
+ 
 
 -- Populate Property Address data
 
@@ -74,7 +74,7 @@ JOIN PortfolioProject.dbo.NashvilleHousing b
 Where a.PropertyAddress is null
 
 
---------------------------------------------------------------------------------------------------------------------------
+
 
 -- Breaking out Address into Individual Columns (Address, City, State)
 
@@ -139,7 +139,7 @@ Select *
 From PortfolioProject.dbo.NashvilleHousing
 
 
---------------------------------------------------------------------------------------------------------------------------
+
 
 
 -- Change Y and N to Yes and No in "Sold as Vacant" field
@@ -167,7 +167,7 @@ SET SoldAsVacant =  CASE When SoldAsVacant = 'Y' THEN 'Yes'
 
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 -- Remove Duplicates
 
@@ -196,7 +196,7 @@ Select *
 From PortfolioProject.dbo.NashvilleHousing
 
 
----------------------------------------------------------------------------------------------------------
+
 
 -- Delete Unused Columns
 
